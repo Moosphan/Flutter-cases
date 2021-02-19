@@ -25,6 +25,7 @@ import 'package:flutter_cases/demo/topic/material/sliders_demo.dart';
 import 'package:flutter_cases/demo/topic/material/snackbar_demo.dart';
 import 'package:flutter_cases/demo/topic/material/tabs_demo.dart';
 import 'package:flutter_cases/demo/topic/widget/button_demo.dart';
+import 'package:flutter_cases/demo/topic/widget/click_demo.dart';
 import 'package:flutter_cases/demo/topic/widget/divider_demo.dart';
 import 'package:flutter_cases/demo/topic/widget/icon_demo.dart';
 import 'package:flutter_cases/demo/topic/widget/image_demo.dart';
@@ -117,6 +118,13 @@ class RoutesConfiguration {
       path: 'place_holder',
       icon: Icons.account_balance_outlined,
       builder: (_) => PlaceHolderDemo(),
+    ),
+    BoatRoute(
+      category: RouteCategory.demo,
+      title: Strings.click,
+      path: 'click',
+      icon: Icons.touch_app_outlined,
+      builder: (_) => ClickEventDemo(),
     ),
   ];
 

@@ -13,6 +13,7 @@ class Strings {
   static const progressBar = 'ProgressBar';
   static const divider = 'Divider';
   static const placeHolder = 'PlaceHolder';
+  static const click = 'ClickEvent';
 
   static const appbar = 'AppBar';
   static const banner = 'Banner';
