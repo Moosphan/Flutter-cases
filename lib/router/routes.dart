@@ -24,6 +24,8 @@ import 'package:flutter_cases/demo/topic/material/picker_demo.dart';
 import 'package:flutter_cases/demo/topic/material/sliders_demo.dart';
 import 'package:flutter_cases/demo/topic/material/snackbar_demo.dart';
 import 'package:flutter_cases/demo/topic/material/tabs_demo.dart';
+import 'package:flutter_cases/demo/topic/state/provider_demo.dart';
+import 'package:flutter_cases/demo/topic/state/scoped_model_demo.dart';
 import 'package:flutter_cases/demo/topic/widget/button_demo.dart';
 import 'package:flutter_cases/demo/topic/widget/click_demo.dart';
 import 'package:flutter_cases/demo/topic/widget/divider_demo.dart';
@@ -46,7 +48,8 @@ class RoutesConfiguration {
   static List<BoatRoute> getAllRoutes() =>
     getDemoRoutes() +
         getMaterialRoutes() +
-        getCupertinoRoutes();
+        getCupertinoRoutes() +
+        otherRoutes();
 
   static List<BoatRoute> getDemoRoutes() => [
     BoatRoute(
@@ -274,7 +277,15 @@ class RoutesConfiguration {
     ),
   ];
 
-  List<BoatRoute> otherRoutes = [];
+  static List<BoatRoute> otherRoutes() => [
+    BoatRoute(
+      category: RouteCategory.demo,
+      title: Strings.state,
+      path: 'state-manage',
+      icon: Icons.track_changes,
+      builder: (_) => ProviderDemoPage(),
+    ),
+  ];
 
   Map<String, BoatRoute> getRouteData() {
     return LinkedHashMap<String, BoatRoute>.fromIterable(

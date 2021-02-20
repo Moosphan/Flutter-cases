@@ -122,6 +122,12 @@
       "languageVersion": "2.10"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/daozhi/.pub-cache/hosted/pub.dartlang.org/nested-0.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/daozhi/.pub-cache/hosted/pub.dartlang.org/path-1.8.0-nullsafety.1",
       "packageUri": "lib/",
@@ -138,6 +144,18 @@
       "rootUri": "file:///Users/daozhi/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.1"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/daozhi/.pub-cache/hosted/pub.dartlang.org/provider-4.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
+      "name": "scoped_model",
+      "rootUri": "file:///Users/daozhi/.pub-cache/hosted/pub.dartlang.org/scoped_model-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
     },
     {
       "name": "sky_engine",
@@ -200,7 +218,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-02-19T09:14:09.133894Z",
+  "generated": "2021-02-20T06:08:20.806096Z",
   "generator": "pub",
   "generatorVersion": "2.10.5"
 }

@@ -3,7 +3,6 @@ import 'package:flutter/widgets.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import '../../../utils/screen_utils.dart';
-import '../../../utils/screen_utils.dart';
 import '../../../widgets/section_label.dart';
 /// 关于增加点击事件处理的常见方式
 /// @date 2021/02/16

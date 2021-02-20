@@ -28,6 +28,7 @@ class Strings {
   static const slider = 'Slider';
   static const snackBar = 'SnackBar';
   static const tabs = 'TabView';
+  static const state = 'State Management';
 
   static const iosIndicator = 'CupertinoActivityIndicator';
   static const iosAlert = 'CupertinoDialog';
