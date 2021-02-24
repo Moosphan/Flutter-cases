@@ -1,4 +1,3 @@
-
 import 'dart:developer';
 
 import 'package:flutter/cupertino.dart';
@@ -15,6 +14,7 @@ typedef DestinationBuilder = Widget Function(BuildContext, String);
 class Boat {
   /// A RegEx string for boat traveling.
   final String path;
+
   /// The builder for the associated pattern route. The first argument is the
   /// [BuildContext] and the second argument a RegEx match if that destination path is included
   /// in the pattern.
@@ -24,7 +24,6 @@ class Boat {
 }
 
 class BoatRouter {
-
   /// Navigate to the target page when route is matched.
   static Route<dynamic> generateRoute(RouteSettings settings) {
     log('router get the route name: ${settings.name}');
@@ -44,22 +43,23 @@ class BoatRouter {
     // no route matched, go to 404 page
     return null;
   }
-  
+
   static List<Boat> boats = [
     Boat(
       r'^' + RoutesConfiguration.demoBase + r'/([\w-]+)$',
-          (context, path) {
+      (context, path) {
         log('go to demo page...');
         return DemoPage(path: path);
       },
     ),
+
     /// Note: the root page should be the last matched.
     Boat(
       r'^/',
-          (context, match) => const RootPage(),
+      (context, match) => const RootPage(),
     ),
+
     /// demo pages
     /// TODO: sample apps
   ];
-
 }

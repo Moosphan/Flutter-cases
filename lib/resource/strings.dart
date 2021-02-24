@@ -1,4 +1,3 @@
-
 /// string resources
 /// @author moosphon
 /// TODO: use localizations instead
@@ -40,19 +39,19 @@ class Strings {
   static const iosSwitch = 'CupertinoSwitch';
   static const iosInput = 'CupertinoTextField';
 
-
   // subtitles
 
   // descriptions
   static const textDesc = 'Display and style text.';
   static const imageDesc = 'Manage assets and display images.';
   static const iconDesc = 'Display and style icon.';
-  static const toggleDesc = 'Like check box and radios which can toggle states.';
+  static const toggleDesc =
+      'Like check box and radios which can toggle states.';
   static const buttonDesc = 'Widget can callback user clicks.';
   static const inputDesc = 'Text field which can input some thing.';
-  static const progressBarDesc = 'Progress bar which can display the state or progress of user operation';
+  static const progressBarDesc =
+      'Progress bar which can display the state or progress of user operation';
 
   // other
   static const contentHolderText = '我是内容:)';
-
 }
