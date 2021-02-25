@@ -81,9 +81,7 @@ class _BottomNavigationDemoState extends State<BottomNavigationDemo>
 
     return Scaffold(
       body: Center(
-        child: Text(
-          bottomNavigationBarItems[_currentIndex.value].label
-        )),
+          child: Text(bottomNavigationBarItems[_currentIndex.value].label)),
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels:
             widget.type == BottomNavigationDemoType.withLabels,
