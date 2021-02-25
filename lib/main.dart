@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cases/pages/homepage.dart';
+import 'package:flutter_cases/pages/new_home_page.dart';
 import 'package:flutter_cases/router/router.dart';
 import 'package:flutter_cases/theme/themes.dart';
 
@@ -26,6 +27,6 @@ class RootPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HomePage();
+    return NewHomePage();
   }
 }
